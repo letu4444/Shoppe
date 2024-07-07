@@ -1,0 +1,42 @@
+
+
+server:
+  port: 8081
+spring:
+  datasource:
+    driverClassName: //
+    password: //
+    url: //
+    username: //
+  jpa:
+    hibernate:
+      ddl-auto: none
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: //
+            clientSecret: //
+            scope: 
+                - email
+                - profile
+#          facebook:
+#            clientId: 
+#            clientSecret: 
+#            scope:
+#               - email
+#               - profile   
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    
+jwt:
+  header: Authorization
+  secret: abcdefghijklmnOPQRSTUVWXYZ
