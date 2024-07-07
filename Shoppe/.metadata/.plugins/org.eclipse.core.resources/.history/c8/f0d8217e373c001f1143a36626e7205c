@@ -1,0 +1,20 @@
+package faceboockspring.serviecs.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import faceboockspring.persistence.dao.ImageProductRepository;
+import faceboockspring.serviecs.ImageProduct;
+
+@Service
+public class ImageProductServerc implements ImageProduct{
+ 
+	@Autowired
+	private ImageProductRepository imageProductRepository;
+	@Override
+	public String[] findOneByProduct3(Long id) {
+		
+		return imageProductRepository.findOneByProduct3(id);
+	}
+
+}

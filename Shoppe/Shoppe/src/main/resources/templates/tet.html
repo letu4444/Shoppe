@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div class="tong1l-3 _A4-5-4" th:utext="${product.title}"></div>
+	<div th:utext="${product.phanloai[0]}"></div>
+	
+
+	<th:block th:if="${product.phanloai[0]}">
+		<div class="tong1l-7">
+			<div class="tong1l-3" th:utext="${product.phanloai[0]}">Size</div>
+			<div class="mau1a" >
+				<button class="mau1b" th:each="i:${product.hangphanloai}" th:aria-label="${i}" th:text="${i}">S</button>
+				<input type="hidden" th:each="ie:${product.imagephanloai}" th:value="${ie}">
+			</div>
+		</div>
+	</th:block>
+ <th:block th:if="${product.phanloai.length} ==2">
+		<div class="tong1l-7">
+			<div class="tong1l-3" th:utext="${product.phanloai[1]}">Size</div>
+			<div class="mau1a" >
+				<button class="mau1b" th:each="i:${product.hangphanloai2}" th:aria-label="${i}" th:text="${i}">S</button>
+				
+			</div>
+		</div>
+	</th:block> 
+</body>
+</html>

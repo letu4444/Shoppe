@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/public/dangnhap.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/public/dangki.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/public/otp1.css}"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+	rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="_1k">
+        <div class="_1k1">
+            <div class="_1k2">
+                <a href="/lam web/index.html" class="fa fa-linux"></a>
+                <a href="/lam web/index.html">zuka</a>
+                <span class="_1k3">Đăng ký</span>
+           </div>
+           <a href="#" class="_1k4">Bạn cần giúp đỡ?</a>
+        </div>
+        <div class="_1k5">
+            <div class="_1k6">
+                <i class="fa fa-linux">&ensp;Zuka
+                    <span class="_1k8">Nền tàng thương mại điện tử lớn nhất Đông Nam Á</span>
+                </i>
+                <form th:action="@{/registration/save}" method="post" class="_1k9">
+                    <div class="_1k7">Đăng ký</div>
+                    <div class="_1k7-1">
+                     <div class="error">
+                                <div class="error1">
+                                    <div class="error2">
+                                        <span class="error3"></span>
+                                        <span class="error4">Lỗi</span>
+                                    </div>
+                                    <div class="error5">Tên tài khoản đã tồn tại. Vui lòng nhập tên khác</div>
+                                </div>
+                            </div>
+                        <div class="tab" th:if="${param.error} != null" id ="error">
+                         <div class="_1k7-6">
+                                <input type="text" class="iphone" name="email_id" value="" placeholder="Nhập Email...">
+                                <div class="_1k7-6-1">
+                                    <svg fill="none" viewBox="0 0 16 16" class="Bx8yR7"><path fill="none" stroke="#6C0" d="M8 15A7 7 0 108 1a7 7 0 000 14z" clip-rule="evenodd"></path><path stroke="none" fill="#6C0" fill-rule="evenodd" d="M11.621 6.406l-3.98 4.059c-.266.266-.719.244-1.012-.049-.293-.293-.314-.746-.048-1.012l3.98-4.059c.266-.266.719-.245 1.012.048.293.293.314.747.048 1.013z" clip-rule="evenodd"></path><path stroke="none" fill="#6C0" fill-rule="evenodd" d="M3.803 7.997l2.81 2.532c.267.267.72.245 1.013-.048.293-.293.315-.746.048-1.012l-2.81-2.532c-.267-.267-.72-.245-1.013.048-.293.293-.314.746-.048 1.012z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div class="_1k7-7"></div>
+                            </div>
+                        </div>
+                        <div class="tab" th:if="${param.error} == null">
+                            <div class="_1k7-6">
+                                <input type="text" class="iphone" name="email_id" value="" placeholder="Nhập Email...">
+                                <div class="_1k7-6-1">
+                                    <svg fill="none" viewBox="0 0 16 16" class="Bx8yR7"><path fill="none" stroke="#6C0" d="M8 15A7 7 0 108 1a7 7 0 000 14z" clip-rule="evenodd"></path><path stroke="none" fill="#6C0" fill-rule="evenodd" d="M11.621 6.406l-3.98 4.059c-.266.266-.719.244-1.012-.049-.293-.293-.314-.746-.048-1.012l3.98-4.059c.266-.266.719-.245 1.012.048.293.293.314.747.048 1.013z" clip-rule="evenodd"></path><path stroke="none" fill="#6C0" fill-rule="evenodd" d="M3.803 7.997l2.81 2.532c.267.267.72.245 1.013-.048.293-.293.315-.746.048-1.012l-2.81-2.532c-.267-.267-.72-.245-1.013.048-.293.293-.314.746-.048 1.012z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div class="_1k7-7"></div>
+                            </div>
+                        </div>
+                        <button type="button" class="_1k7-2-1 anh" disabled>Tiếp theo</button>
+                        <div class="tab">
+                           
+                            <div class="_1k7-6">
+                                <input type="text" class="name" name="name" value="" placeholder="Tên đăng nhập...">
+                                <div class="_1k7-6-1">
+                                    <svg fill="none" viewBox="0 0 16 16" class="Bx8yR7"><path fill="none" stroke="#6C0" d="M8 15A7 7 0 108 1a7 7 0 000 14z" clip-rule="evenodd"></path><path stroke="none" fill="#6C0" fill-rule="evenodd" d="M11.621 6.406l-3.98 4.059c-.266.266-.719.244-1.012-.049-.293-.293-.314-.746-.048-1.012l3.98-4.059c.266-.266.719-.245 1.012.048.293.293.314.747.048 1.013z" clip-rule="evenodd"></path><path stroke="none" fill="#6C0" fill-rule="evenodd" d="M3.803 7.997l2.81 2.532c.267.267.72.245 1.013-.048.293-.293.315-.746.048-1.012l-2.81-2.532c-.267-.267-.72-.245-1.013.048-.293.293-.314.746-.048 1.012z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div class="_1k7-7"></div>
+                            </div>
+                            <div class="_1k7-6">
+                                <input type="password" class="password" name="password" value="" placeholder="Mật khẩu">
+                                <div class="_1k7-6-1">
+                                    <svg fill="none" viewBox="0 0 16 16" class="Bx8yR7"><path fill="none" stroke="#6C0" d="M8 15A7 7 0 108 1a7 7 0 000 14z" clip-rule="evenodd"></path><path stroke="none" fill="#6C0" fill-rule="evenodd" d="M11.621 6.406l-3.98 4.059c-.266.266-.719.244-1.012-.049-.293-.293-.314-.746-.048-1.012l3.98-4.059c.266-.266.719-.245 1.012.048.293.293.314.747.048 1.013z" clip-rule="evenodd"></path><path stroke="none" fill="#6C0" fill-rule="evenodd" d="M3.803 7.997l2.81 2.532c.267.267.72.245 1.013-.048.293-.293.315-.746.048-1.012l-2.81-2.532c-.267-.267-.72-.245-1.013.048-.293.293-.314.746-.048 1.012z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div class="_1k7-7"></div>
+                            </div>
+                            <div class="_1k7-6">
+                                <input type="password" class="ispassword" name="ispassword" value="" placeholder="Nhập lại mật khẩu...">
+                                <div class="_1k7-6-1">
+                                    <svg fill="none" viewBox="0 0 16 16" class="Bx8yR7"><path fill="none" stroke="#6C0" d="M8 15A7 7 0 108 1a7 7 0 000 14z" clip-rule="evenodd"></path><path stroke="none" fill="#6C0" fill-rule="evenodd" d="M11.621 6.406l-3.98 4.059c-.266.266-.719.244-1.012-.049-.293-.293-.314-.746-.048-1.012l3.98-4.059c.266-.266.719-.245 1.012.048.293.293.314.747.048 1.013z" clip-rule="evenodd"></path><path stroke="none" fill="#6C0" fill-rule="evenodd" d="M3.803 7.997l2.81 2.532c.267.267.72.245 1.013-.048.293-.293.315-.746.048-1.012l-2.81-2.532c-.267-.267-.72-.245-1.013.048-.293.293-.314.746-.048 1.012z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div class="_1k7-7"></div>
+                            </div>
+                        </div>
+                        <button type="submit" class="_1k7-2" disabled>Hoàn thành</button>
+                        <div class="_1k7-3">
+                            <span class="_1k7-4"></span>
+                            <span class="_1k7-5">Hoặc</span>
+                            <span class="_1k7-4"></span>
+                        </div>
+                        <div class="_1k7-9">
+                            <a class="_1k7-0">
+                                <div class="_1k7-0-1"></div>
+                                <div class="_1k7-0-2">Facebook</div>
+                            </a>
+                            <a class="_1k7-0">
+                                <div class="_1k7-0-3"></div>
+                                <div class="_1k7-0-2">Googe</div>
+                            </a>
+                        </div>
+                        <div class="_2k1">
+                            <div class="_2k2">
+                                Bẳng việc đăng kí ,bạn đã đồng ý với Zuka về
+                                <a href="#" class="_2k3">Điều khoản dịch vụ</a>
+                                &
+                                <a href="#" class="_2k3">Chính sách bảo mật</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_2k4">
+                        <div class="_2k5">
+                            Bạn đã có tài khoản?
+                            <a href="/lam web/dangnhap/dangnhap.html" class="_2k6">Đăng nhập</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="mode">
+                <div class="container">
+					<header>
+						<i class="bx bxs-check-shield"></i>
+					</header>
+
+					<h4>Nhập mã OTP</h4>
+					
+					<div class="alert"></div>
+					<form action="">
+
+						<div class="input-field">
+							<input class="otp2" name="otp" type="text" maxlength="4" value="" />
+
+							<div class="otp">
+								<div class="otp1"></div>
+								<div class="otp1"></div>
+								<div class="otp1"></div>
+								<div class="otp1"></div>
+							</div>
+						</div>
+						<div class="otp4">
+							Bạn vẫn chưa nhận được mã OTP? <span class="lai">Gửi lại</span>
+						</div>
+						  <div class="otp5"></div>
+						<button type="button" class="mode3-3">Xác minh OTP</button>
+					</form>
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script th:src="@{/resources/public/dangky.js}"></script>
+    <script>
+        Validator({
+            form:'._1k9',
+            rules:[
+                Validator.isRequired('.iphone'),
+                Validator.isPhone('.iphone'),
+                Validator.isRequired('.name'),
+                Validator.isRequired('.password'),
+                Validator.isRequired('.ispassword'),
+                Validator.minLength('.password', 8),
+                Validator.isPassword('.ispassword',function(){
+                    return document.querySelector('._1k9 .password').value;
+                }, 'Mật khẩu nhập lại không chíng xác'),
+
+
+            ],
+            onSubmit: function(data){
+              console.log(data);
+            }
+        })
+    </script>
+      <script th:src="@{/resources/public/otp.js}"></script>
+</body>
+</html>

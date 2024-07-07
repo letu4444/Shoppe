@@ -1,0 +1,38 @@
+package faceboockspring.serviecs.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import faceboockspring.persistence.dao.TheloaiRepository;
+import faceboockspring.persistence.model.Theloai;
+import faceboockspring.serviecs.TheloaiServiec;
+
+@Service
+public class TheloaiImpl implements TheloaiServiec{
+
+	@Autowired
+	private TheloaiRepository theloaiRepository;
+	@Override
+	public Theloai findOneById(Long id) {
+		
+		return theloaiRepository.findOneById(id);
+	}
+
+	@Override
+	public Theloai findByCode(String code) {
+		
+		return theloaiRepository.findOneByCode(code);
+	}
+
+	@Override
+	public String save(Theloai theloai) {
+		String code = theloai.getCode();;
+		if(theloaiRepository.findOneByCode(theloai.getCode()) == null) {
+			theloaiRepository.save(theloai);
+		
+			
+		}
+		return code;
+	}
+
+}

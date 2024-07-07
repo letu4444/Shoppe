@@ -1,0 +1,29 @@
+package faceboockspring.serviecs;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.domain.Pageable;
+
+import faceboockspring.dto.CartDto;
+import faceboockspring.dto.ProductDto;
+import faceboockspring.persistence.model.Product;
+
+public interface ProductServiec {
+
+   ProductDto findByTitleIsContaining(String title);
+   
+   List<Product> findByTitleLike(String title);
+   
+   List<ProductDto> findByTitleIsContaining(String title,Pageable pageable);
+	
+	ProductDto findOneById(Long id);
+	
+	Product save(ProductDto product);
+	
+	int totalItem();
+	
+	void detele(long[] id);
+	
+	
+}

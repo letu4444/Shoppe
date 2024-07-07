@@ -1,0 +1,879 @@
+@charset "UTF-8";
+body{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif!important;
+}
+.giohang{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-bottom: 20px;
+
+}
+.giohang2-3{
+    position: sticky;
+    bottom: 0;
+    background-color: #f5f5f5;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    display: flex;
+}
+.giohang1{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid rgba(224,168,0,.4) ;
+    border-radius: 2px;
+    padding: .75rem 1rem;
+}
+.giohang1-1{
+    background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/pdp/1cdd37339544d858f4d0ade5723cd477.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 15px;
+}
+.giohang1-2{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 15px;
+}
+.giohang1-3{
+    display: flex;
+    align-items: center;
+    padding: .75rem 1rem;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%);
+    height: 55px;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #555;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.giohang1-5{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    height: 20px;
+    width: 20px;
+    margin-left: 15px;
+}
+.giohang1-5 input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checke{
+    position: absolute;
+    height: 15px ;
+    width: 15px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.14);
+    cursor: pointer;
+    left: 3px;
+    top: 3px;
+    border-radius: 2px;
+}
+.checke::after{
+    content: "";
+    position: absolute;
+}
+.giohang1-5_chekbox > .checke{
+    background-color: #ee4d2d;
+}
+.giohang1-5 input:checked ~.checke::after{
+    display: block;
+}
+.giohang1-5 .checke::after{
+    left: 5px;
+    top: 0px;
+    width: 3px;
+    height: 9px;
+    border: solid white;
+    border-width: 0px 2px 2px 0px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.giohang1-4{
+    margin-left: 10px;
+    width: 48.8888%;
+
+}
+.giohang1-6,.giohang1-7{
+    width: 13.5%;
+    margin-left: 10px;
+    text-align: center;
+}
+.giohang1-8{
+    width: 11%;
+    margin-left: 10px;
+    text-align: center;
+}
+.giohang1-9{
+    width: 10%;
+    margin-left: 10px;
+    text-align: center;
+}
+.A2-2{
+    font-size: 14px;
+    color: #888;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 20px;
+    background: #fff;
+    width: 100%;
+}
+.A2-3{
+    border-bottom: 1px solid rgba(0,0,0,.09);
+    padding-left:20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: .75rem;
+}
+.A2-4{
+    text-decoration: none;
+    padding-left: 25px;
+    color: rgba(0,0,0,.87);
+    font-weight: 500;
+    min-width: 50px;
+    display: flex;
+   align-items: center;
+}
+._330rTo{
+    display: flex;
+    align-items: center;
+
+}
+.A2-5{
+    margin-left: 15px;
+}
+.A2-6{
+    border: none;
+    background: transparent;
+    margin-left: 5px;
+   color: #ee4d2d;
+   display: flex;
+   align-items: center;
+}
+.Co0ddi{
+    fill: currentColor;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    font-size: 16px;
+}
+.A2-7{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.A2-8{
+    padding: 22px 20px;
+    border-radius: 2px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.09);
+}
+.giohang2{
+    border: 1px solid rgba(0,0,0,.09);
+   
+}
+.A2-9{
+    color: rgba(0,0,0,.87) ;
+    font-weight: 300;
+    line-height: 12px;
+    background: #fff3ed;
+    display: flex;
+    align-items: center;
+    padding:20px;
+}
+.A2-0{
+    color: #ee4d2d;
+    font-size: 12px;
+    border: 1px solid #ee4d2d;
+    border-radius: 4px;
+}
+.A3{
+    margin-left: 16px;
+    font-size: 14px;
+
+}
+.A3-1{
+    text-decoration: none;
+    color: #ee4d2d;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.A3-2{
+    color: #ee4d2d;
+    cursor: pointer;
+    width: auto;
+    padding: 12px;
+    font-size: 14px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.A3-3{
+    display: flex;
+    color: rgba(0,0,0,.87);
+    padding: 16px 0;
+  align-items: center;
+}
+.A3-4{
+    width: 45.8888%;
+    margin-left: 25px;
+   display: flex;
+   align-items: center;
+}
+._A4-2{
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+._A4-2 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+._A4-3{
+    display: flex;
+    width: 250px;
+    margin-left: 10px;
+    flex-direction: column;
+}
+._A4-3-1{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+._A4-3-2{
+    background-repeat: no-repeat;
+    background-image: url(https://cf.shopee.vn/file/dfbed9a3cd0262310a716c40cbcd455a);
+    background-size: contain;
+    width: 100%;
+    height: 15px;
+    margin-top: 10px;
+}
+._A4-4{
+    margin-left: 15px;
+    height: 50px;
+    width: 130px;
+    display: flex;
+}
+._A4-4-6{
+    display: none;
+    position: relative;
+}
+._A4-5-3{
+    max-height: 28.125rem;
+    position: absolute;
+    z-index: 3;
+    overflow: hidden;
+}
+._3k6{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    position: relative;
+}
+
+._3k9{
+    position: absolute;
+    bottom: -1px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(0,0,0,.09);
+}
+._3k7{
+    position: absolute;
+    bottom: -1px;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid white;
+}
+._A4-5-2{
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.09);
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 19.6875rem;
+}
+._A4-5-4{
+    width: 100%;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+._A4-5-5{
+    margin-bottom: 20px;
+}
+._A4-5-6{
+    justify-content: flex-end;
+    margin-top: 15px;
+    flex: 1;
+    margin-bottom: 15px;
+}
+._A4-5-7{
+    padding: 10px 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 140px;
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: #555;
+    margin-right: 6px;
+    line-height: 1;
+    background: none;
+    border: 0;
+    transition: background-color .1s cubic-bezier(.4,0,.6,1);
+
+}
+._A4-5-8{
+    background: #ee4d2d;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 140px;
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 6px;
+    line-height: 1;
+    border: 0;
+    transition: background-color .1s cubic-bezier(.4,0,.6,1);
+}
+
+._A4-4-1{
+    display: flex;
+    flex-direction: column;
+}
+._A4-4-2{
+    display: flex;
+    align-items: center;
+}
+._A4-4-4{
+    color: #555;
+    padding-right: 5px
+}
+._A4-4-5{
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    background: none;
+    padding: 0;
+    border-top: 5px solid rgba(0,0,0,.54);
+    border-bottom: 0;
+    transition: transform .1s cubic-bezier(.4,0,.6,1);
+    transform: rotate(0);
+    margin: 0 0 0 10px;
+}
+._A4-4-5-1{
+    transform: rotate(180deg);
+}
+._A4-4-3{
+    color: #555;
+    padding-top: 5px;
+}
+._A4-4-7{
+    width: 15.888%;
+    justify-content: center;
+    display: flex;
+}
+._A4-4-8{
+    margin-left: 5px;
+    font-size: 14px;
+}
+.tong1q{
+    width: 13%;
+    justify-content: center;
+}
+.tong1l-1{
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .1s cubic-bezier(.4,0,.6,1);
+    border: 1px solid rgba(0,0,0,.09);
+    border-radius: 2px;
+    background: transparent;
+    color: rgba(0,0,0,.8);
+    width: 32px;
+}
+._A5{
+    width: 12%;
+    text-align: center;
+}
+.xoa{
+    width: 10%;
+    text-align: center;
+}
+.A3-5{
+    font-size: 16px;
+    color: #929292;
+    text-decoration: line-through;
+
+}
+._A4-4-7{
+    color: #ee4d2d;
+}
+.xoa{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    
+}
+._A5{
+    display: flex;
+    justify-content: center;
+
+}
+._A5-1{
+    font-size: 14px;
+    color: #ee4d2d;
+}
+._A3-5{
+    font-size: 14px;
+    color: #929292;
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+.A3-6{
+    padding:1rem 0 1rem 2.5rem ;
+    border-top:1px solid rgba(0,0,0,.09) ;
+   display: flex;
+   align-items: center;
+}
+.A3-7{
+    margin-left: 10px;
+    display: flex;
+}
+.A3-8{
+    color: rgb(0 0 0);
+    font-size: 13px;
+}
+.A3-9{
+    color: royalblue;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.icon-voucher-line{
+    width: 20px;
+    height: 20px;
+    color: #ee4d2d;
+    stroke: currentColor;
+}
+.tong5{
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 20.3125rem 11.875rem;
+    background: #fff;
+    align-items: center;
+    flex:1;
+    box-sizing: border-box;
+    font-size: 1rem;
+    height: 200px;
+    float: left;
+}
+.tong1{
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding: .75rem 0;
+    display: flex;
+    align-items: center;
+
+}
+.icon-voucher-line{
+    display: inline-block;
+    color: #ee4d2d;
+    fill: currentColor;
+    width: 1.3125rem;
+    height: 1.25rem;
+    margin-right: 10px;
+}
+.tong1a{
+    margin: .315rem 0;
+    font-weight: 500;
+    flex-shrink: 0;
+
+}
+.tong1a-2{
+    flex: 1;
+}
+.tong1a-1{
+    color: #ee4d2d;
+    text-transform: capitalize;
+    font-size: .8125rem;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 1.875rem;
+}
+.tong2{
+    width: 1200px;
+    border: 1px dashed rgba(0,0,0,.09);
+   grid-column-start: 1;
+   grid-column-end: 4;
+   -ms-grid-column-span: 3;
+
+}
+.tong2a{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding: 16px 12px 16px 20px;
+    min-width: 50px;
+}
+.tong2-4{
+    padding-left: 30px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 20px;
+}
+.tong2-1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: flex-start;
+
+}
+.fa-usd{
+    color: #ee4d2d;
+    border-radius: 50%;
+    border: 1px solid #ee4d2d;
+    margin-right: 10px;
+    width: 0.825rem;
+    height: 0.825rem;
+    text-align: center;
+
+}
+.tong2-2{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+    flex-shrink: 0;
+    margin-right: 17px;
+}
+.tong2-3{
+    font-size: 14px;
+    font-weight: 500;
+    flex: 0 1 auto;
+    color: #929292;
+    margin-right: 10px;
+}
+.fa-question-circle{
+    color: #929292;
+}
+.tong3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+
+}
+.tong3-1,.tong3-2,.tong3-3{
+    border: none;
+    font-size: 15px;
+    margin-left: 18px;
+    text-transform: capitalize;
+    background: transparent;
+}
+.tong3-3{
+    color: #ee4d2d;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+    white-space: nowrap;
+
+}
+.tong2-4 input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+
+}
+/* tạo hộp checkbox mới */
+.tong2-5{
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background: #eeeeee00;
+    border: 1px solid rgba(0,0,0,.14);
+   border-radius: 2px;
+   top: 4px;
+}
+/* Tạo màu khi di chuột qua */
+.tong2-4:hover input ~.tong2-5{
+    background-color: #c4c3c3;
+
+}
+/* khi hop dk chon nen mau*/
+.tong2-4 input:checked ~.tong2-5{
+    background-color:#ee4d2d;
+}
+/*tao hop moi khi check box*/
+.tong2-5:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.tong2-4 input:checked ~.tong2-5:after{
+    display: block;
+}
+/*tao dau phay cho nut chon*/
+.tong2-4 .tong2-5:after{
+    left: 3px;
+    top: 0px;
+    width: 3px;
+    height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.tong3-0{
+    flex: 1;
+}
+.tong3-4{
+    display: flex;
+   flex-direction: column;
+}
+.tong3-5{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+
+
+}
+.tong3-6{
+    font-size: 17px;
+    color: #222;
+    
+}
+.tong3-7, .tong3-7-1{
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: 5px;
+    color: #ee4d2d;
+}
+.tong3-8{
+    padding: 13px 36px;
+    margin: 0 22px 0 15px;
+    text-transform: capitalize;
+    font-weight: 300;
+    height: 2.5rem;
+    box-sizing: border-box;
+    font-size: .875rem;
+    border-radius: 2px;
+    width: 13.125rem;
+    border: none;
+    background: #ee4d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tong3-9{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #fff;
+}
+.sticky {
+    position: fixed;
+    bottom: 0;
+    width: 1200px;
+  }
+.sticky +.content{
+    padding-bottom: 10px;
+
+}
+._1o{
+    float: left;
+    position: relative;
+    margin: 20px;
+}
+.xoa:hover{
+color: #ee4d2d;
+}
+._A4-4-6-1{
+    display: block;
+}
+.tong1l-1[disabled]{
+    color: #ccc;
+    background: rgba(0,0,0,.09);
+}
+button:disabled, input:disabled{
+    cursor: default;
+}
+.checksp{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color:rgb(0 0 0) ;
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    overflow: auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.checksp1{
+    width: 31.25rem;
+    border-radius: 3px;
+    padding: 1.25rem;
+    overflow: visible;
+    background-color: #fff;
+    max-width: 100%;
+    max-height: 100%;
+
+
+
+}
+.amina{
+    -webkit-animation: amina1 0.6s;
+    animation: amina1 0.6s
+}
+@-webkit-keyframes amina1 {
+    form {-webkit-transform:scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+@keyframes amina1 {
+    form {transform: scale(0)}
+    to {transform: scale(1)}
+}
+.checksp2{
+    color: #ee4d2d;
+    font-size: 20px;
+    margin-top: 25px;
+
+}
+.checksp3{
+    font-size: 16px;
+    overflow: hidden;
+    color: #555;
+    margin-top: 20px;
+}
+.checksp4{
+    margin-top: 6.25rem;
+    display: grid;
+    flex-direction: column;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 15rem ;
+}
+.checksp5{
+    background-color: #ee4d2d;
+    color: #fff;
+    padding: .625rem;
+    font-size: 14px;
+    text-align: center;
+   border: none;
+   border-radius: 2px;
+}
+.checksp6{
+    border: 1px solid #888;
+    padding: .625rem;
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+     border-radius: 2px;
+}
+.checksp5:hover, .checksp6:hover{
+    opacity: 0.6;
+}
+.cart1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 21rem;
+    margin: 0px 20px;
+    justify-content: center;
+
+}
+.cart1-1{
+    background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/9bdd8040b334d31946f49e36beaf32db.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 6.75rem;
+    height: 6.75rem;
+   
+}
+.cart1-2{
+    color: rgba(0,0,0,.4);
+    font-size: .875rem;
+    line-height: 1rem;
+    margin-top: 1.125rem;
+    font-weight: 700;
+}
+.cart1-3{
+    text-decoration: none;
+    margin-top: 1.125rem;
+   
+    width: 140px;
+    height: 40px;
+}
+.cart1-4{
+    position: relative;
+    overflow: visible;
+    outline: 0;
+    background: #ee4d2d;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.cart1-4:hover{
+    background: #ec5c3f; 
+    color: rgb(250, 243, 243);
+}
+

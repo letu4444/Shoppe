@@ -1,0 +1,48 @@
+package Shoppe.dto;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProductOutput {
+	
+	private int totalPage;
+	private int page;
+	
+	private String title;
+	
+	private List<ProductDto> dtos= new ArrayList<>();
+
+	public int getTotalPage() {
+		return totalPage;
+	}
+
+	public void setTotalPage(int totalPage) {
+		this.totalPage = totalPage;
+	}
+
+	public int getPage() {
+		return page;
+	}
+
+	public void setPage(int page) {
+		this.page = page;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public List<ProductDto> getDtos() {
+		return dtos;
+	}
+
+	public void setDtos(List<ProductDto> dtos) {
+		this.dtos = dtos;
+	}
+	
+	
+}

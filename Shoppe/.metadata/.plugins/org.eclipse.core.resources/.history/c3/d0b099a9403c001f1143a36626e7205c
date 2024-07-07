@@ -1,0 +1,5 @@
+package Shoppe.config.autho;
+
+public class LogoutSuccessHandler {
+
+}

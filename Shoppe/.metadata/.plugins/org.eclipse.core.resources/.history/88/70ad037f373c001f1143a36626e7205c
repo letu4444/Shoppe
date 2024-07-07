@@ -1,0 +1,20 @@
+package faceboockspring.serviecs;
+
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+import faceboockspring.dto.UserDto;
+import faceboockspring.persistence.model.User;
+import faceboockspring.persistence.model.VerificationToken;
+
+public interface DefaultUserService extends UserDetailsService {
+
+	User saveRegistration(UserDto userDto);
+	
+	User findByEmail(String email);
+	
+	User saveTokenofUser(String email, VerificationToken verificationToken);
+	
+	User findByUserName(String username);
+	
+	User resetPassword(UserDto userDto);
+}

@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+.app-wrapper{
+    width: 100%;
+    height: 1000px;
+}
+.row1{
+    background: #ffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 1px #cccc;
+}
+.form-group{
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.theloai{
+    width: 200px;
+    text-align: center;
+    height: 30px;
+    color: #555555;
+    padding: 5px;
+}
+.col1{
+    width: 80%;
+    height: 40px;
+    padding-left: 10px;
+}
+.mota{
+    width: 80%;
+}
+.addimage{
+    max-width: 40%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #aaa;
+    position: relative;
+}
+.tm-upload-icon{
+    background: #455c71;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 20px;
+
+}
+.inputimage,.add{
+    height: 45px;
+    border: none;
+    background: #d4661d;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 40%;
+    border-radius: 2px;
+    padding: 5px;
+    text-align: center;
+}
+.inputimage:hover,.add:hover{
+    background: #fff;
+    color: #d4661d;
+    border: 1px solid #d4661d;
+    transition: all .2s ease-in-out;
+}
+.image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* .fa-cloud-upload-alt:before {
+    content: "\f382";
+    font-family: "FontAwesome6";
+} */
+.col-sm-9{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0;
+    background-color: #fff;
+    -webkit-transition: left .5s ease; 
+     transition: left .5s ease;
+
+}
+.theloai1{
+    webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 320px;
+    border-right: 1px solid #3a373738;
+    overflow-y: auto;
+    padding-left: 10px;
+}
+.theloai1::-webkit-scrollbar{
+    width: 6px;
+    background-color: #F5F5F5;
+}
+.theloai1::-webkit-scrollbar-thumb{
+    background-color: rgb(213 21 21 / 10%);
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 28%);
+    border-radius: 10px;
+}
+.theloai1::-webkit-scrollbar-track{
+    background-color: rgb(0 0 0 / 0%);
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 19%);
+    border-radius: 10px;
+}
+.theloai1-1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    line-height: 32px;
+    padding: 0 16px;
+    color: #333;
+
+}
+.category-item{
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.category-item-right{
+    
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.icon-next{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 14px;
+    flex: 0 0 14px;
+    width: 14px;
+    height: 14px;
+    color: #888;
+
+}
+.theloai1-1.selcted:not(.is-prohibit) .icon-next[data-v-38ab3376], .category-selector .category-item.selected[data-v-38ab3376]:not(.is-prohibit) {
+    color: #ee4d2d;
+}
+.shopee-icon{
+    fill: currentColor;
+    display: inline-block;
+    line-height: 0;
+
+}
+/* .theloai1-1::after {
+    float: right;
+    content: '\f105';
+    font-family: FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .01px;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+
+} */
+
+.theloai1-1:hover{
+    background: #f6f6f6;
+    cursor: pointer;
+}
+.selcted{
+    color: #ee4d2d;
+}
+/* //khi dữ liệu đã vào */
+.luuthanh{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+.luuthanh1{
+    width: 100%;
+    height: 100%;
+    background: #6b696957;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.luuthanh1-2{
+    width: 200px;
+    height: 120px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000038;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 22px;
+    font-family: ui-rounded;
+    font-weight: 700;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<link type="text/css" rel="stylesheet" th:href="@{/resources/public/admin/admin.css}">
+<script src="https://kit.fontawesome.com/17cfc9faeb.js" crossorigin="anonymous"></script>
+<!-- <link type="text/css" rel="stylesheet" th:href="@{/resources/public/admin/chunang1.css}"> -->
+</head>
+<body class="app">
+ <div th:replace="header/adminheadr :: adminheader"></div>
+ <div th:replace="admin/noidung :: adminnodung"></div>
+
+<!-- Charts JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script th:src="@{/resources/public/admin/admin.js}"></script>
+	<script th:src="@{/resources/public/admin/chunang1.js}"></script>
+</body>
+</html>

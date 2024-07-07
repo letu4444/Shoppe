@@ -1,0 +1,42 @@
+
+
+server:
+  port: 8081
+spring:
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: 4444
+    url: jdbc:sqlserver://localhost:1433;databaseName=a
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 568460219473-u0l5kd6eho482bc815j5rpkfeu2pau1f.apps.googleusercontent.com
+            clientSecret: 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
+            scope: 
+                - email
+                - profile
+#          facebook:
+#            clientId: 
+#            clientSecret: 
+#            scope:
+#               - email
+#               - profile   
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    
+jwt:
+  header: Authorization
+  secret: abcdefghijklmnOPQRSTUVWXYZ

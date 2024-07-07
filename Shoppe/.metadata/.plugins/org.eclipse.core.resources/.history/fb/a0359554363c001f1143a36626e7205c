@@ -1,0 +1,114 @@
+package faceboockspring.dto;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import faceboockspring.persistence.model.Privilege;
+import faceboockspring.persistence.model.Role;
+import faceboockspring.persistence.model.User;
+
+public class MyUser implements UserDetails{
+
+	private User user;
+
+
+
+	public MyUser(User user) {
+	
+		this.user = user;
+	}
+
+	public MyUser() {
+		// TODO Auto-generated constructor stub
+	}
+	public User getUser() {
+		return user;
+	}
+
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		List<Role>  roles = user.getRoles();
+//	List<SimpleGrantedAuthority> authorities = new ArrayList<>();
+		
+//		for (Role role : roles) {
+//			authorities.add(new SimpleGrantedAuthority(role.getName()));
+//		}
+		
+		return getGrantedAuthorities(getPrivileges(roles));
+	}
+    
+	private List<String> getPrivileges(List<Role> roles) {
+		 
+        List<String> privileges = new ArrayList<>();
+        List<Privilege> collection = new ArrayList<>();
+        for (Role role : roles) {
+            privileges.add(role.getName());
+            collection.addAll(role.getPrivileges());
+        }
+        for (Privilege item : collection) {
+            privileges.add(item.getName());
+        }
+        return privileges;
+    }
+
+    private List<GrantedAuthority> getGrantedAuthorities(List<String> privileges) {
+        List<GrantedAuthority> authorities = new ArrayList<>();
+        for (String privilege : privileges) {
+            authorities.add(new SimpleGrantedAuthority(privilege));
+        }
+        return authorities;
+    }
+    
+	@Override
+	public String getPassword() {
+		
+		return user.getPassword();
+	}
+
+	@Override
+	public String getUsername() {
+		// TODO Auto-generated method stub
+		return user.getUsername();
+	}
+
+	@Override
+	public boolean isAccountNonExpired() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isAccountNonLocked() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isCredentialsNonExpired() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isEnabled() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+	
+
+
+
+
+
+}

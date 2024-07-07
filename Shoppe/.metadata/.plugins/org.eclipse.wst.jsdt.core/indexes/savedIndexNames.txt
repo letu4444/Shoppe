@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\letu9\OneDrive\デスクトップ\Shoppe\workspace\Shoppe\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2075285395.index
+2131917132.index
+3216844423.index
+4131775502.index
+1177757033.index

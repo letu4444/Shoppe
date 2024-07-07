@@ -1,0 +1,9 @@
+package faceboockspring.serviecs;
+
+import faceboockspring.dto.PhanloaihangDto;
+
+public interface PhanloaiServiec {
+
+	PhanloaihangDto findAll(Long id);
+	
+}

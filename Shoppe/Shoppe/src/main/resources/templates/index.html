@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org",
+       xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Trangchu</title>
+<link th:href="@{/resources/public/index.css}" type="text/css"
+	rel="stylesheet">
+<link th:href="@{/resources/public/tieude1.css}" type="text/css"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="tieude">
+		<div th:replace="header/headr :: header"></div>
+	</div>
+	<div class="maine">
+		<div class="slide">
+			<div th:replace="slide/slide2 :: slide1" ></div>
+			<div class="slide3">
+                 <div class="slide3-1"></div>
+                 <div class="slide3-2"></div>
+             </div>
+		</div>
+
+		<div class="maine1">
+			<a href="#">
+				<div class="maine1-2">
+					<img
+						src="https://cf.shopee.vn/file/46a2a2c810622f314d78455da5e5d926_xhdpi"
+						alt="">
+					<div class="maine1-3">Khung giờ vàng</div>
+				</div>
+			</a> <a href="#">
+				<div class="maine1-2">
+					<img
+						src="https://cf.shopee.vn/file/b3535d7e56c58c4ebe9a87672d38cc5e_xhdpi"
+						alt="">
+					<div class="maine1-3">Gì cũng rẻ-Miễn phí Freeship</div>
+				</div>
+			</a> <a href="#">
+				<div class="maine1-2">
+					<img
+						src="https://cf.shopee.vn/file/c7a2e1ae720f9704f92f72c9ef1a494a_xhdpi"
+						alt="">
+					<div class="maine1-3">Miễn phí vận chuyển</div>
+				</div>
+			</a> <a href="#">
+				<div class="maine1-2">
+					<img
+						src="https://cf.shopee.vn/file/21a4856d1fecd4eda143748661315dba_xhdpi"
+						alt="">
+					<div class="maine1-3">Hoàn xu 6%-Lên đến 200k</div>
+				</div>
+			</a> <a href="#">
+				<div class="maine1-2">
+					<img
+						src="https://cf.shopee.vn/file/8d6d5ee795e7675fed39d31ba04c3b92_xhdpi"
+						alt="">
+					<div class="maine1-3">Hàng hiệu tốt</div>
+				</div>
+			</a> <a href="#">
+				<div class="maine1-2">
+					<img
+						src="https://cf.shopee.vn/file/a08ab28962514a626195ef0415411585_xhdpi"
+						alt="">
+					<div class="maine1-3">Hàng quốc tế</div>
+				</div>
+			</a> <a href="#">
+				<div class="maine1-2">
+					<img
+						src="https://cf.shopee.vn/file/9df57ba80ca225e67c08a8a0d8cc7b85_xhdpi"
+						alt="">
+					<div class="maine1-3">Nạp thẻ & Hóa đơn</div>
+				</div>
+			</a> <a href="#">
+				<div class="maine1-2">
+					<img
+						src="https://cf.shopee.vn/file/96385a65fa50800e096bb790fa5c1dba_xhdpi"
+						alt="">
+					<div class="maine1-3">Deal sốc 1k</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="uudai">
+			<div class="uudai1"></div>
+		</div>
+		<div class="danhmuc">
+			<div class="danhmuc1">
+				<div class="danhmuc1-1">Danh mục</div>
+				<div class="danhmuc1-2">
+					<div class="danhmuc1-7">
+						<ul class="danhmuc1-6"
+							style="width: 140%; transition: all 0ms ease 0s; transform: translateX(0px);">
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/687f3967b7c2fe6a134a2c11894eea4b_tn"
+											alt="">
+										<div class="danhmuc1-5">Thời trang nam</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/75ea42f9eca124e9cb3cde744c060e4d_tn"
+											alt="">
+										<div class="danhmuc1-5">Thời trang nữ</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/31234a27876fb89cd522d7e3db1ba5ca_tn"
+											alt="">
+										<div class="danhmuc1-5">Điện thoại & phụ kiện</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/099edde1ab31df35bc255912bab54a5e_tn"
+											alt="">
+										<div class="danhmuc1-5">Mẹ & bé</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/978b9e4cb61c611aaaf58664fae133c5_tn"
+											alt="">
+										<div class="danhmuc1-5">Điện tử</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/49119e891a44fa135f5f6f5fd4cfc747_tn"
+											alt="">
+										<div class="danhmuc1-5">Giày dép nữ</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/49119e891a44fa135f5f6f5fd4cfc747_tn"
+											alt="">
+										<div class="danhmuc1-5">Sức khỏe</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/36013311815c55d303b0e6c62d6a8139_tn"
+											alt="">
+										<div class="danhmuc1-5">Sách học tập</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/b0f78c3136d2d78d49af71dd1c3f38c1_tn"
+											alt="">
+										<div class="danhmuc1-5">Voucher & du lịch</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/c3f3edfaa9f6dafc4825b77d8449999d_tn"
+											alt="">
+										<div class="danhmuc1-5">Laptop & máy tính</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/c432168ee788f903f1ea024487f2c889_tn"
+											alt="">
+										<div class="danhmuc1-5">Bách hóa xanh</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/cd8e0d2e6c14c4904058ae20821d0763_tn"
+											alt="">
+										<div class="danhmuc1-5">Giặt giũ & chăm sóc nhà cửa</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/cdf21b1bf4bfff257efe29054ecea1ec_tn"
+											alt="">
+										<div class="danhmuc1-5">Đồ chăm sóc xúc vật</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/ce8f8abc726cafff671d0e5311caa684_tn"
+											alt="">
+										<div class="danhmuc1-5">Đò chơi</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn"
+											alt="">
+										<div class="danhmuc1-5">Máy ảnh & máy chụp ảnh</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/ef1f336ecc6f97b790d5aae9916dcb72_tn"
+											alt="">
+										<div class="danhmuc1-5">Sắc đẹp</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/fa6ada2555e8e51f369718bbc92ccc52_tn"
+											alt="">
+										<div class="danhmuc1-5">Túi xách nữ</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/3fb459e3449905545701b418e8220334_tn"
+											alt="">
+										<div class="danhmuc1-5">ô tố &xa máy & xe đạ</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/6cb7e633f8b63757463b676bd19a50e4_tn"
+											alt="">
+										<div class="danhmuc1-5">Thể thao</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/7abfbfee3c4844652b4a8245e473d857_tn"
+											alt="">
+										<div class="danhmuc1-5">đồ điện</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/cdf21b1bf4bfff257efe29054ecea1ec_tn"
+											alt="">
+										<div class="danhmuc1-5">Đồ chăm sóc xúc vật</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/ce8f8abc726cafff671d0e5311caa684_tn"
+											alt="">
+										<div class="danhmuc1-5">Đò chơi</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn"
+											alt="">
+										<div class="danhmuc1-5">Máy ảnh & máy chụp ảnh</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/ef1f336ecc6f97b790d5aae9916dcb72_tn"
+											alt="">
+										<div class="danhmuc1-5">Sắc đẹp</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/fa6ada2555e8e51f369718bbc92ccc52_tn"
+											alt="">
+										<div class="danhmuc1-5">Túi xách nữ</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/3fb459e3449905545701b418e8220334_tn"
+											alt="">
+										<div class="danhmuc1-5">ô tố &xa máy & xe đạ</div>
+									</div>
+							</a></li>
+							<li class="danhmuc1-3"><a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/6cb7e633f8b63757463b676bd19a50e4_tn"
+											alt="">
+										<div class="danhmuc1-5">Thể thao</div>
+									</div>
+							</a> <a href="#">
+									<div class="danhmuc1-4">
+										<img
+											src="https://cf.shopee.vn/file/7abfbfee3c4844652b4a8245e473d857_tn"
+											alt="">
+										<div class="danhmuc1-5">đồ điện</div>
+									</div>
+							</a></li>
+						</ul>
+					</div>
+					<div class="danhmuc1-8">❮</div>
+					<div class="danhmuc1-9">❯</div>
+				</div>
+			</div>
+		</div>
+		<div class="sale1">
+			<div class="sale1-3">
+				<div class="sale1-1"></div>
+				<div class="sale1-2" id="demo1" _msttexthash="9360" _msthash="64">00</div>
+				<div class="sale1-2" id="demo2" _msttexthash="9360" _msthash="65">00</div>
+				<div class="sale1-2" id="demo3" _msttexthash="9360" _msthash="66">00</div>
+			</div>
+			<div class="sale1-4">
+				<a href="#">
+					<button class="sale1-5" _msttexthash="2630433" _msthash="67">Xem
+						tất cả</button> <svg enable-background="new 0 0 11 11" viewBox="0 0 11 11"
+						x="0" y="0" class="svg-icon1">
+					<path
+							d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>
+                        </svg>
+				</a>
+			</div>
+		</div>
+		<div class="sale2">
+			<div class="sale2-1">
+				<ul class="sale2-2"
+					style="width: 185%; transition: all 500ms ease 0s; transform: translateX(0px);">
+					<li class="sale2-3">
+						<div class="sale2-0">
+							<div class="sale2-4">
+								<div class="sale2-5"
+									style="background-image: url(https://cf.shopee.vn/file/9df4537bdcb5ee67ee813a888a738509_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-6"
+									style="background-image: url(https://cf.shopee.vn/file/25d647f249a17a50c4b5235cda5ceecd_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-7">
+									<span class="sale2-7-1" _msttexthash="14417" _msthash="68">80%</span>
+									<span class="sale2-7-2" _msttexthash="949182" _msthash="69">Giảm</span>
+								</div>
+							</div>
+							<div class="sale2-8">
+								<div class="sale2-8-1">
+									<font _mstmutation="1" _msttexthash="809783" _msthash="70"><span
+										class="sale2-8-3" _mstmutation="1" _istranslated="1">₫
+									</span> <span class="sale2-8-4" _mstmutation="1" _istranslated="1">540.000</span></font>
+								</div>
+								<div class="sale2-8-2">
+									<div class="sale2-8-7"
+										style="background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/ac7f81d9ee062223753413ec98497a86.png); background-repeat: no-repeat; background-size: cover; width: 30%;"></div>
+									<div class="sale2-8-5" _msttexthash="120900" _msthash="71">Đã
+										bán 12</div>
+									<div class="sale2-8-6"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="sale2-3">
+						<div class="sale2-0">
+							<div class="sale2-4">
+								<div class="sale2-5"
+									style="background-image: url(https://cf.shopee.vn/file/9df4537bdcb5ee67ee813a888a738509_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-6"
+									style="background-image: url(https://cf.shopee.vn/file/ef8e7da995a9101ffe2f79672768d9d2_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-7">
+									<span class="sale2-7-1" _msttexthash="14456" _msthash="72">53%</span>
+									<span class="sale2-7-2" _msttexthash="949182" _msthash="73">Giảm</span>
+
+								</div>
+							</div>
+							<div class="sale2-8">
+								<div class="sale2-8-1">
+									<font _mstmutation="1" _msttexthash="809783" _msthash="74"><span
+										class="sale2-8-3" _mstmutation="1" _istranslated="1">₫
+									</span> <span class="sale2-8-4" _mstmutation="1" _istranslated="1">540.000</span></font>
+								</div>
+								<div class="sale2-8-2">
+									<div class="sale2-8-7"
+										style="background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/ac7f81d9ee062223753413ec98497a86.png); background-repeat: no-repeat; background-size: cover; width: 30%;"></div>
+									<div class="sale2-8-5" _msttexthash="120900" _msthash="75">Đã
+										bán 12</div>
+									<div class="sale2-8-6"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="sale2-3">
+						<div class="sale2-0">
+							<div class="sale2-4">
+								<div class="sale2-5"
+									style="background-image: url(https://cf.shopee.vn/file/9df4537bdcb5ee67ee813a888a738509_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-6"
+									style="background-image: url(https://cf.shopee.vn/file/8e57262c5a644c9b24a09e8c6a9b2dd6_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-7">
+									<span class="sale2-7-1" _msttexthash="14326" _msthash="76">70%</span>
+									<span class="sale2-7-2" _msttexthash="949182" _msthash="77">Giảm</span>
+
+								</div>
+							</div>
+							<div class="sale2-8">
+								<div class="sale2-8-1">
+									<font _mstmutation="1" _msttexthash="809471" _msthash="78"><span
+										class="sale2-8-3" _mstmutation="1" _istranslated="1">₫
+									</span> <span class="sale2-8-4" _mstmutation="1" _istranslated="1">240.000</span></font>
+								</div>
+								<div class="sale2-8-2">
+									<div class="sale2-8-7"
+										style="background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/ac7f81d9ee062223753413ec98497a86.png); background-repeat: no-repeat; background-size: cover; width: 30%;"></div>
+									<div class="sale2-8-5" _msttexthash="120718" _msthash="79">Đã
+										bán 20</div>
+									<div class="sale2-8-6"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="sale2-3">
+						<div class="sale2-0">
+							<div class="sale2-4">
+								<div class="sale2-5"
+									style="background-image: url(https://cf.shopee.vn/file/6032b64297fe23e933ee6510c36a1a32_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-6"
+									style="background-image: url(https://cf.shopee.vn/file/33e3e81c1135ec03d514e6e62e72867b_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-7">
+									<span class="sale2-7-1" _msttexthash="13871" _msthash="80">20%</span>
+									<span class="sale2-7-2" _msttexthash="949182" _msthash="81">Giảm</span>
+
+								</div>
+							</div>
+							<div class="sale2-8">
+								<div class="sale2-8-1">
+									<font _mstmutation="1" _msttexthash="809107" _msthash="82"><span
+										class="sale2-8-3" _mstmutation="1" _istranslated="1">₫
+									</span> <span class="sale2-8-4" _mstmutation="1" _istranslated="1">300.000</span></font>
+								</div>
+								<div class="sale2-8-2">
+									<div class="sale2-8-7"
+										style="background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/ac7f81d9ee062223753413ec98497a86.png); background-repeat: no-repeat; background-size: cover; width: 3%;"></div>
+									<div class="sale2-8-5" _msttexthash="112606" _msthash="83">Đã
+										bán 2</div>
+									<div class="sale2-8-6"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="sale2-3">
+						<div class="sale2-0">
+							<div class="sale2-4">
+								<div class="sale2-5"
+									style="background-image: url(https://cf.shopee.vn/file/9df4537bdcb5ee67ee813a888a738509_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-6"
+									style="background-image: url(https://cf.shopee.vn/file/d782d3710b47dbda2698a56cea50ec51_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-7">
+									<span class="sale2-7-1" _msttexthash="14755" _msthash="84">65%</span>
+									<span class="sale2-7-2" _msttexthash="949182" _msthash="85">Giảm</span>
+
+								</div>
+							</div>
+							<div class="sale2-8">
+								<div class="sale2-8-1">
+									<font _mstmutation="1" _msttexthash="809471" _msthash="86"><span
+										class="sale2-8-3" _mstmutation="1" _istranslated="1">₫
+									</span> <span class="sale2-8-4" _mstmutation="1" _istranslated="1">240.000</span></font>
+								</div>
+								<div class="sale2-8-2">
+									<div class="sale2-8-7"
+										style="background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/ac7f81d9ee062223753413ec98497a86.png); background-repeat: no-repeat; background-size: cover; width: 43%;"></div>
+									<div class="sale2-8-5" _msttexthash="120874" _msthash="87">Đã
+										bán 30</div>
+									<div class="sale2-8-6"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="sale2-3">
+						<div class="sale2-0">
+							<div class="sale2-4">
+								<div class="sale2-5"
+									style="background-image: url(https://cf.shopee.vn/file/9df4537bdcb5ee67ee813a888a738509_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-6"
+									style="background-image: url(https://cf.shopee.vn/file/9e2c213569c02cf372c74e96e6a7434a_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-7">
+									<span class="sale2-7-1" _msttexthash="14053" _msthash="88">40%</span>
+									<span class="sale2-7-2" _msttexthash="949182" _msthash="89">Giảm</span>
+
+								</div>
+							</div>
+							<div class="sale2-8">
+								<div class="sale2-8-1">
+									<font _mstmutation="1" _msttexthash="809250" _msthash="90"><span
+										class="sale2-8-3" _mstmutation="1" _istranslated="1">₫
+									</span> <span class="sale2-8-4" _mstmutation="1" _istranslated="1">130.000</span></font>
+								</div>
+								<div class="sale2-8-2">
+									<div class="sale2-8-7"
+										style="background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/ac7f81d9ee062223753413ec98497a86.png); background-repeat: no-repeat; background-size: cover; width: 50%;"></div>
+									<div class="sale2-8-5" _msttexthash="121186" _msthash="91">Đã
+										bán 50</div>
+									<div class="sale2-8-6"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="sale2-3">
+						<div class="sale2-0">
+							<div class="sale2-4">
+								<div class="sale2-5"
+									style="background-image: url(https://cf.shopee.vn/file/6032b64297fe23e933ee6510c36a1a32_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-6"
+									style="background-image: url(https://cf.shopee.vn/file/1d202f940e0d8ca990a75ec398f0dfe6_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-7">
+									<span class="sale2-7-1" _msttexthash="14144" _msthash="92">50%</span>
+									<span class="sale2-7-2" _msttexthash="949182" _msthash="93">Giảm</span>
+
+								</div>
+							</div>
+							<div class="sale2-8">
+								<div class="sale2-8-1">
+									<font _mstmutation="1" _msttexthash="800605" _msthash="94"><span
+										class="sale2-8-3" _mstmutation="1" _istranslated="1">₫
+									</span> <span class="sale2-8-4" _mstmutation="1" _istranslated="1">50.000</span></font>
+								</div>
+								<div class="sale2-8-2">
+									<div class="sale2-8-7"
+										style="background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/ac7f81d9ee062223753413ec98497a86.png); background-repeat: no-repeat; background-size: cover; width: 65%;"></div>
+									<div class="sale2-8-5" _msttexthash="131092" _msthash="95">Đã
+										bán 128</div>
+									<div class="sale2-8-6"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="sale2-3">
+						<div class="sale2-0">
+							<div class="sale2-4">
+								<div class="sale2-5"
+									style="background-image: url(https://cf.shopee.vn/file/9df4537bdcb5ee67ee813a888a738509_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-6"
+									style="background-image: url(https://cf.shopee.vn/file/b36936f38108b8c56a925f8e594010d1_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-7">
+									<span class="sale2-7-1" _msttexthash="13780" _msthash="96">10%</span>
+									<span class="sale2-7-2" _msttexthash="949182" _msthash="97">Giảm</span>
+
+								</div>
+							</div>
+							<div class="sale2-8">
+								<div class="sale2-8-1">
+									<font _mstmutation="1" _msttexthash="809575" _msthash="98"><span
+										class="sale2-8-3" _mstmutation="1" _istranslated="1">₫
+									</span> <span class="sale2-8-4" _mstmutation="1" _istranslated="1">340.000</span></font>
+								</div>
+								<div class="sale2-8-2">
+									<div class="sale2-8-7"
+										style="background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/ac7f81d9ee062223753413ec98497a86.png); background-repeat: no-repeat; background-size: cover; width: 10%;"></div>
+									<div class="sale2-8-5" _msttexthash="113386" _msthash="99">Đã
+										bán 7</div>
+									<div class="sale2-8-6"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="sale2-3">
+						<div class="sale2-0">
+							<div class="sale2-4">
+								<div class="sale2-5"
+									style="background-image: url(https://cf.shopee.vn/file/9df4537bdcb5ee67ee813a888a738509_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-6"
+									style="background-image: url(https://cf.shopee.vn/file/399c58e63ae0190269d93b19fdbb01e5_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-7">
+									<span class="sale2-7-1" _msttexthash="14417" _msthash="100">80%</span>
+									<span class="sale2-7-2" _msttexthash="949182" _msthash="101">Giảm</span>
+
+								</div>
+							</div>
+							<div class="sale2-8">
+								<div class="sale2-8-1">
+									<font _mstmutation="1" _msttexthash="810758" _msthash="102"><span
+										class="sale2-8-3" _mstmutation="1" _istranslated="1">₫
+									</span> <span class="sale2-8-4" _mstmutation="1" _istranslated="1">259.000</span></font>
+								</div>
+								<div class="sale2-8-2">
+									<div class="sale2-8-7"
+										style="background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/ac7f81d9ee062223753413ec98497a86.png); background-repeat: no-repeat; background-size: cover; width: 25%;"></div>
+									<div class="sale2-8-5" _msttexthash="121407" _msthash="103">Đã
+										bán 15</div>
+									<div class="sale2-8-6"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="sale2-3">
+						<div class="sale2-0">
+							<div class="sale2-4">
+								<div class="sale2-5"
+									style="background-image: url(https://cf.shopee.vn/file/9df4537bdcb5ee67ee813a888a738509_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-6"
+									style="background-image: url(https://cf.shopee.vn/file/ec4a4b27d0d5d2c47f6987330db1e5b7_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-7">
+									<span class="sale2-7-1" _msttexthash="14417" _msthash="104">80%</span>
+									<span class="sale2-7-2" _msttexthash="949182" _msthash="105">Giảm</span>
+
+								</div>
+							</div>
+							<div class="sale2-8">
+								<div class="sale2-8-1">
+									<font _mstmutation="1" _msttexthash="809575" _msthash="106"><span
+										class="sale2-8-3" _mstmutation="1" _istranslated="1">₫
+									</span> <span class="sale2-8-4" _mstmutation="1" _istranslated="1">340.000</span></font>
+								</div>
+								<div class="sale2-8-2">
+									<div class="sale2-8-7"
+										style="background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/ac7f81d9ee062223753413ec98497a86.png); background-repeat: no-repeat; background-size: cover; width: 5%;"></div>
+									<div class="sale2-8-5" _msttexthash="112450" _msthash="107">Đã
+										bán 1</div>
+									<div class="sale2-8-6"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="sale2-3">
+						<div class="sale2-0">
+							<div class="sale2-4">
+								<div class="sale2-5"
+									style="background-image: url(https://cf.shopee.vn/file/5acfd4061afa8cd8c670e0cdfe24002f_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-6"
+									style="background-image: url(https://cf.shopee.vn/file/f1b225f66628cd92dc21368cbde57542_tn); background-size: contain; background-repeat: no-repeat;"></div>
+								<div class="sale2-7">
+									<span class="sale2-7-1" _msttexthash="13871" _msthash="108">20%</span>
+									<span class="sale2-7-2" _msttexthash="949182" _msthash="109">Giảm</span>
+
+								</div>
+							</div>
+							<div class="sale2-8">
+								<div class="sale2-8-1">
+									<font _mstmutation="1" _msttexthash="800917" _msthash="110"><span
+										class="sale2-8-3" _mstmutation="1" _istranslated="1">₫
+									</span> <span class="sale2-8-4" _mstmutation="1" _istranslated="1">80.000</span></font>
+								</div>
+								<div class="sale2-8-2">
+									<div class="sale2-8-7"
+										style="background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/ac7f81d9ee062223753413ec98497a86.png); background-repeat: no-repeat; background-size: cover; width: 20%;"></div>
+									<div class="sale2-8-5" _msttexthash="120562" _msthash="111">Đã
+										bán 10</div>
+									<div class="sale2-8-6"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="sale3" _msttexthash="918554" _msthidden="1"
+				_msthash="112">❮</div>
+			<div class="sale3-1" _msttexthash="918645" _msthash="113">❯</div>
+		</div>
+		<div class="kiniem">
+			<a href="#" class="kiniem1"></a> <a href="#" class="kiniem1"></a> <a
+				href="#" class="kiniem1"></a>
+
+		</div>
+		<div th:replace="shopenho/shope1 :: shope1"></div>
+		<div class="xuhuong">
+			<div class="xuhuong1">
+				<div class="xuhuong1-1">xu hương tìm kiếm</div>
+				<div class="xuhuong1-2">
+					<button class="xuhuong1-3">
+						<svg viewBox="0 0 12 15" class="shopee-svg-icon">
+							<path
+								d="M12 7.51268255c0-1.71021918-.7226562-3.30538371-1.9648437-4.43447938-.20507817-.18525749-.52148442-.16965686-.7070313.03315134-.18554687.20475828-.16992188.52067106.03320313.70592856C10.3984375 4.75722109 11 6.08717488 11 7.51268255c0 2.59360495-1.98242187 4.72699125-4.515625 4.96880095l.68164063-.7878318c.1796875-.2086585.15625-.5245713-.05273438-.7039785-.20898438-.1794073-.52539062-.1560063-.70507813.0526521l-1.49609375 1.7336201c-.18164062.2106086-.15625.5284714.05664063.7078787l1.65429688 1.3982065c.21093749.1774572.52539062.1521062.70507812-.0585023.17773438-.2106085.15234375-.5245712-.05859375-.7039785l-.75195313-.6357257C9.58789062 13.2205634 12 10.6484094 12 7.51268255zM2.80273438 11.3523879C1.66796875 10.4085497 1 9.0161934 1 7.51463263c0-2.75741154 2.23828125-4.99220194 5-4.99220194h.01367188l-.7734375.75078037c-.19726563.19305781-.203125.50897059-.00976563.70592855.19335938.19695797.50976563.20280821.70703125.0097504l1.64257813-1.59516453c.19921875-.19305781.20117187-.51287074.00585937-.70982871L6.06054688.14723461c-.1953125-.19500789-.51171875-.19695797-.70703125-.00195008C5.15820313.34029242 5.15625.6562052 5.3515625.85121309l.66992188.67472729H6c-3.31445312 0-6 2.68135846-6 5.99064232 0 1.8018729.80273438 3.4750406 2.16210938 4.6060863.21289062.1755071.52734375.148206.70507812-.0643526.17773438-.2164587.1484375-.5304214-.06445312-.7059285z"
+								fill-rule="nonzero"></path>
+                        </svg>
+						&nbsp; Xem thêm
+					</button>
+				</div>
+			</div>
+			<div class="xuhuong2">
+				<a href="#" class="xuhuong2-1">
+					<div class="xuhuong2-2">
+						<div class="xuhuong2-3">
+							<div class="xuhuong2-4">Dép</div>
+							<span class="xuhuong2-5">4k+sản phẩm</span>
+						</div>
+						<div class="xuhuong2-6"
+							style="background-image: url(https://cf.shopee.vn/file/1a897cfb3e7497c005bc8bad2bca2a80); background-repeat: no-repeat; background-size: cover;"></div>
+					</div>
+				</a> <a href="#" class="xuhuong2-1">
+					<div class="xuhuong2-2">
+						<div class="xuhuong2-3">
+							<div class="xuhuong2-4">Váy</div>
+							<span class="xuhuong2-5">4k+sản phẩm</span>
+						</div>
+						<div class="xuhuong2-6"
+							style="background-image: url(https://cf.shopee.vn/file/0c408a3d2466afb9b34e116d8d7a06e7); background-repeat: no-repeat; background-size: cover;"></div>
+					</div>
+				</a> <a href="#" class="xuhuong2-1">
+					<div class="xuhuong2-2">
+						<div class="xuhuong2-3">
+							<div class="xuhuong2-4">Áo phông</div>
+							<span class="xuhuong2-5">3k+sản phẩm</span>
+						</div>
+						<div class="xuhuong2-6"
+							style="background-image: url(https://cf.shopee.vn/file/a12ab003d8fbb22901674141dcd77492); background-repeat: no-repeat; background-size: cover;"></div>
+					</div>
+				</a> <a href="#" class="xuhuong2-1">
+					<div class="xuhuong2-2">
+						<div class="xuhuong2-3">
+							<div class="xuhuong2-4">Áo croptop</div>
+							<span class="xuhuong2-5">4k+sản phẩm</span>
+						</div>
+						<div class="xuhuong2-6"
+							style="background-image: url(https://cf.shopee.vn/file/dfe0d809e3ba342cd3875db678ccd8ec); background-repeat: no-repeat; background-size: cover;"></div>
+					</div>
+				</a> <a href="#" class="xuhuong2-1">
+					<div class="xuhuong2-2">
+						<div class="xuhuong2-3">
+							<div class="xuhuong2-4">Dép nữ</div>
+							<span class="xuhuong2-5">4k+sản phẩm</span>
+						</div>
+						<div class="xuhuong2-6"
+							style="background-image: url(https://cf.shopee.vn/file/1804e9d75a8e3f6a1dd1e0ced20b2d0b); background-repeat: no-repeat; background-size: cover;"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="hangdau">
+			<div class="hangdau1">
+				<div class="hangdau1-1">Tìm kiếm hàng đầu</div>
+				<div class="hangdau1-2">
+					<a href="#">
+						<button class="sale1-5">Xem tất cả</button> <svg
+							enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
+							class="svg-icon1">
+							<path
+								d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>
+                        </svg>
+					</a>
+				</div>
+			</div>
+			<div class="hangdau2">
+				<div class="hangdau2-1">
+					<ul class="hangdau2-2"
+						style="width: 349.3333%; transition: all 500ms ease 0s; transform: translateX(0px);">
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/d5580eefc05b473d1816d1161c0863d7); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 42k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Dép quai ngang nữ</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/e561d5b5de63d35f66e52f172b0821d6); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 53k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Quần lót nữ cotton</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/8a66aa29d4d41f356c45e6b4ad956067); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 70k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Hình săm chống nước</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/1e5680c7ac83a5a67250cfff3a24fccd); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 40k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Mút trang điểm</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/769c85eb0cc45f776c9b99d5134cda93); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 43k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Mũ lưỡi trai</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/1e5680c7ac83a5a67250cfff3a24fccd); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 40k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Mút trang điểm</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/769c85eb0cc45f776c9b99d5134cda93); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 43k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Mũ lưỡi trai</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/07e91012d2d803706677f86d99f57ba0); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 54k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Sữa rửa mặt</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/9ec433bca2d7e0f8f6fc2ce1c5097882); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 94k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">QUần ống rộng</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/97836316fe9dc37e014313af55b1ac54); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 69k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Áo thun phông rộng ngắn tay</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/c8169887b60e20a161d0288e6f9a193e); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 43k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Son kem lì</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/8fc5ceae001ec4a6b25731c87413706b); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 47k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Kính mắt trồng</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/bc24d8e6913f0c917cfca3e9a8db0fd2); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 94k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Bút kẻ mắt chống nước</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/4f5b6c76588b7c8a944e491fef4c3f2e); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 61k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Marscara</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/f6e6591832b3f4dfac523956d6141374); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 84k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Kem nền trang điểm</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/9a67b555ee38eeacc8f483cad33d535c); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 43k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Kẹp tóc càng cua đơn giản cho nữ</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/7eedd78043863cd9205f3925f84ed4e2); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 41k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Dây buộ tóc cho nữ</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/9ec433bca2d7e0f8f6fc2ce1c5097882); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 94k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">QUần ống rộng</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/97836316fe9dc37e014313af55b1ac54); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 69k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Áo thun phông rộng ngắn tay</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/c8169887b60e20a161d0288e6f9a193e); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 43k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Son kem lì</div>
+						</a></li>
+						<li class="hangdau2-3"><a href="#">
+								<div class="hangdau2-4">
+									<div class="hangdau2-5"></div>
+									<div class="hangdau2-6"
+										style="background-image: url(https://cf.shopee.vn/file/7eedd78043863cd9205f3925f84ed4e2); background-repeat: no-repeat; background-size: contain;"></div>
+									<div class="hangdau2-7">Bán 41k+ / tháng</div>
+								</div>
+								<div class="hangdau2-8">Dây buộ tóc cho nữ</div>
+						</a></li>
+					</ul>
+				</div>
+				<div class="hangdau2-9">❮</div>
+				<div class="hangdau2-0">❯</div>
+			</div>
+		</div>
+		<div th:replace="goiy/goiy1 ::goiy2"></div>
+	</div>
+	<div class="message">
+	   <div th:replace="message1/messages :: messga1"></div>
+	</div>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+	<script th:src="@{/resources/public/index.js}"></script>
+	<script th:src="@{/resources/public/searchsanpham.js}"></script>
+	 <script th:src="@{/resources/public/gio1.js}"></script>
+	 <script th:src="@{/resources/public/message/stomp.js}"></script>
+	<script th:src="@{/resources/public/message/message1.js}"></script>
+	
+</body>
+</html>

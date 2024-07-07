@@ -1,0 +1,123 @@
+package Shoppe.dto;
+
+
+
+public class ProductDto extends AbstracDto<ProductDto>{
+
+	private Long id;
+	
+	private String tenShope;
+	
+	private String conter;
+	
+	private String title;
+	
+	private String gia;
+	
+	private int soluong;
+	
+	private String image;
+	
+	private Long userid;
+	
+	private String theloainame;
+
+     
+
+	public ProductDto(Long id, String tenShope, String conter, String title, String gia, int soluong, String image,
+			Long userid, String theloainame) {
+		super();
+		this.id = id;
+		this.tenShope = tenShope;
+		this.conter = conter;
+		this.title = title;
+		this.gia = gia;
+		this.soluong = soluong;
+		this.image = image;
+		this.userid = userid;
+		this.theloainame = theloainame;
+	}
+
+	public ProductDto() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getTenShope() {
+		return tenShope;
+	}
+
+	public void setTenShope(String tenShope) {
+		this.tenShope = tenShope;
+	}
+
+	public String getConter() {
+		return conter;
+	}
+
+	public void setConter(String conter) {
+		this.conter = conter;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+
+	public String getGia() {
+		return gia;
+	}
+
+	public void setGia(String gia) {
+		this.gia = gia;
+	}
+
+	public int getSoluong() {
+		return soluong;
+	}
+
+	public void setSoluong(int soluong) {
+		this.soluong = soluong;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+	public Long getUserid() {
+		return userid;
+	}
+
+	public void setUserid(Long userid) {
+		this.userid = userid;
+	}
+
+	public String getTheloainame() {
+		return theloainame;
+	}
+
+	public void setTheloainame(String theloainame) {
+		this.theloainame = theloainame;
+	}
+
+
+	
+	
+	
+	
+}

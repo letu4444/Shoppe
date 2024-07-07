@@ -1,0 +1,5 @@
+package Shoppe.config;
+
+public class WebSocketConfig {
+
+}

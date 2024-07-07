@@ -1,0 +1,9 @@
+package faceboockspring.serviecs;
+
+import faceboockspring.persistence.model.Theloai;
+
+public interface TheloaiServiec {
+  Theloai findOneById(Long id);
+  Theloai findByCode(String code);
+  String save (Theloai theloai);
+}
