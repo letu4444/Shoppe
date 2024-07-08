@@ -36,9 +36,9 @@ public class DefaulUserImpl implements DefaultUserService{
 	
 	private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 	@Override
-	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+	public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {
 		try {
-	    	User user = userRepository.findByEmail(email);
+	    	User user = userRepository.findByUsername(name);
 	    	if (user == null) {
 				throw new UsernameNotFoundException("Chưa tồn tại tài khoản");
 			}

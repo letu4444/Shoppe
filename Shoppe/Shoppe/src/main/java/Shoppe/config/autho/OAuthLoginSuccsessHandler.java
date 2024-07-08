@@ -65,7 +65,7 @@ public class OAuthLoginSuccsessHandler implements AuthenticationSuccessHandler {
 			String image = oauth2User.getImage();
 			User user1 = oauth2User.getUser();
 			
-			if( userRepository.findByEmail(email) == null) {
+			if( userRepository.findByUsername(username) == null) {
 	      	  User user = new User();
 	      	  user.setEmail(email);
 	      	  user.setUsername(username);

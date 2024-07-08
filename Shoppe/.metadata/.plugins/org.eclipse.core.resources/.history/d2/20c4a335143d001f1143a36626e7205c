@@ -1,0 +1,52 @@
+package Lazadar.controller;
+
+import java.util.Map;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.oauth2.jwt.Jwt;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import Lazadar.services.HomeService;
+
+
+
+
+
+
+
+@Controller
+@ResponseBody
+@RequestMapping("/trangchu")
+public class HomeController {
+
+	private final HomeService homeService;
+
+//	var jwt = (Jwt) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+	public HomeController(HomeService homeService) {
+		this.homeService = homeService;
+	}
+	
+	@GetMapping("/hello")
+     public String home(){
+		
+		return "HELLO!";
+	}
+	
+
+	@GetMapping("/user")
+	Map<String, String> user() {
+		
+		return homeService.user();
+	}
+	
+	@GetMapping("/admin")
+	Map<String, String> admin() {
+		return homeService.admin();
+	}
+}
